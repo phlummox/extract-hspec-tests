@@ -1,0 +1,29 @@
+cabal-version: 1.12
+
+name:           extract-hspec-tests
+version:        0.1.0.0
+homepage:       https://github.com/phlummox/extract-hspec-tests#readme
+bug-reports:    https://github.com/phlummox/extract-hspec-tests/issues
+author:         phlummox
+maintainer:     haskell-maintenance@phlummox.dev
+copyright:      2021 phlummox
+license:        BSD2
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/phlummox/extract-hspec-tests
+
+library
+  exposed-modules:
+      Test.ExtractHspecTests
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , hspec
+    , template-haskell
+  default-language: Haskell2010
+
